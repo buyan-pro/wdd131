@@ -2,10 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>WDD 131 - Dynamic Web Fundamentals - Buyannemekh Chimeddorj</title>
+     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Home Page of Buyannemekh Chimeddorj from Mongolia.">
+     <meta name="author" content="Buyannemekh Chimeddorj">
+     <link rel="stylesheet" href="styles/base.css">
+     <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD131 - Buyannemekh Chimeddorj</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/buyannemekh-chimeddorj" title="LinkedIn" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com" title="Canvas" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p7#p7" title="Scripture" target="_blank">Scripture</a></li>
+                <li><a href="#" title="Final Project" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Buyannemekh Chimeddorj</h1>
+        <!--About Me Card-->
+        <section class="card">
+            <h2>About Me</h2>
+
+            <div class="about-content">
+                <p>
+                    Hi, my name is Buyannemekh, but you can call me Buyan for short. I am an online student from Mongolia pursuing a Bachelor’s degree in Software Development at BYU-Idaho through BYU-Pathway Worldwide. I am passionate about technology, continuous learning, and developing skills that will help me build a successful career in the software industry. 
+                </p>
+                <img src="images/profile.jpg" alt="Profile photo">
+            </div>
+
+            <h3>Ulaanbaatar, Mongolia</h3>
+
+            <div class="location-content">
+                <figure>
+                    <img src="images/mongolia.png" alt="Official Flag of Mongolia">
+                    <figcaption>Official Flag of Mongolia</figcaption>
+                </figure>
+                <p>
+                    Mongolia is known for its vast steppes, rich nomadic culture, and breathtaking natural landscapes. It is the homeland of Genghis Khan and has a deep history connected to the Mongol Empire. Mongolia is also famous for its traditional hospitality and unique blend of ancient traditions and modern development.
+                </p>
+            </div>
+        </section>
+
+        <!--Web Dev Resources Card-->
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                <li><a href="https://picsum.photos/" target="_blank">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p> 
+            &copy;
+            <span id="currentyear"></span>
+            Buyannemekh Chimeddorj | Mongolia
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
