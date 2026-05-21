@@ -25,10 +25,15 @@
     <header class="top-banner">
         <h1>Mongolia</h1>
         <div class="header-image-container">
-            <img src="images/camels.webp" alt="Gobi Desert Camels waiting for tourists">
+            <picture>
+                <!--Image for desktop screens (821px wide and above)-->
+                <source srcset="images/camels.webp" media="(min-width: 821px)">
+                <!--Default image optimized for mobile devices-->
+                <img src="images/camels.webp" alt="Gobi Desert Camels waiting for tourists">
+            </picture>
         </div>
     </header>
-    
+
     <main>
         <section class="hero-dashboard">
             <div class="content-overlay">
