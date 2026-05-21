@@ -1,0 +1,135 @@
+/*Base & Mobile Typography (Default Viewport Layer)*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/*Red Header Banner*/
+.top-banner {
+  background-color: #e31e24; /* Mongolian flag red */
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 0 0 0;
+}
+
+.top-banner h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/*Force internal blocks to stack downwards*/
+.header-image-container {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    display: block;
+}
+
+/*Keep the image at stable height*/
+.header-image-container img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+/* Force the dashboard section below the inline image frame */
+.hero-dashboard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative; /*Overrides desktop absolute positioning*/
+    margin-top: 0; /*Drops cards smoothly right underneath the photo asset*/
+    padding: 25px 0;
+}
+
+/* Keep cards centered and neatly separated vertically */
+.content-overlay {
+  display: flex;
+  flex-direction: column; /* Stacks cards straight down */
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card Geometry */
+.info-card {
+  background-color: rgba(255, 255, 255, 0.88); 
+  padding: 0 0 20px 0;
+  width: 100%;
+  max-width: 360px; /* Constrains expansion on large phones */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* National Blue Segment Headers */
+.card-header {
+  background-color: #0033a0; /* Mongolian flag blue */
+  color: #ffffff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-header h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.weather-icon-mobile {
+  font-size: 24px;
+  height: 24px;
+}
+
+/* List Component Grid */
+.stats-list {
+  display: grid;
+  grid-template-columns: 110px 1fr; 
+  gap: 10px 8px;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.stats-list dt {
+  font-weight: 700;
+  color: #111;
+  text-align: right; 
+}
+
+.stats-list dd {
+  margin: 0;
+  color: #333;
+  text-align: left;
+}
+
+/*Footer*/
+footer {
+    background-color: #0033a0; /*Mongolian flag blue color*/
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    clear: both; /*Forces the footer to stay completely below the cards*/
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

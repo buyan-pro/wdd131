@@ -1,0 +1,93 @@
+@media screen and (min-width: 821px) {
+    
+    /*Expand text sizing slightly on large views*/
+    .top-banner {
+        padding: 22px 0 0 0;
+    }
+
+    .top-banner h1 {
+        font-size: 46px;
+        margin-bottom: 20px;
+    }
+
+    .header-image-container {
+        position: relative;
+        width: 100%;
+        height: 480px;
+        overflow: visible;
+    }
+
+    .header-image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero-dashboard {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center; /*Vertically centers the cards over the camel photo*/
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*Layout horizontally across desktop width*/
+    .content-overlay {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /*Splitting left and right margins*/
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+    /*Set fixed widths for desktop card footprints*/
+    .info-card {
+        width: 335px;
+        background-color: rgba(225, 225,225, 0.85);
+        padding-bottom: 25px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-header {
+        margin-bottom: 22px;
+        padding: 14px 22px;
+    }
+
+    .card-header h2 {
+        font-size: 22px;
+    }
+
+    /*Refined typography spacing inside large columns*/
+    .stats-list {
+        grid-template-columns: 115px 1fr;
+        gap: 12px 10px;
+        padding: 0 25px;
+        font-size: 14.5px;
+    }
+
+    /*Hide the SVG icon on large screens*/
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    /*Pseudo element for Weather Icon*/
+    .weather-card .card-header h2::after {
+        content: " ☀️"; /*Injects the icon dynamically purely via CSS*/
+        font-size: 22px;
+        margin-left: 12px;
+        vertical-align: middle;
+    }
+
+     /* Ensure structural spacing for the footer since the image is absolutely positioned */
+    footer {
+        margin-top: 0;
+    }
+}

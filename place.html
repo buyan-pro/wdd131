@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="WDD 131 - Country Page: Description of Mongolia, the land of Chinggis Khan.">
+    <meta name="author" content="Buyannemekh Chimeddorj">
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <!--JavaScript-->
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <!--Header Banner-->
+    <header class="top-banner">
+        <h1>Mongolia</h1>
+        <div class="header-image-container">
+            <img src="images/camels.webp" alt="Gobi Desert Camels waiting for tourists">
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero-dashboard">
+            <div class="content-overlay">
+                <!--Left Data Card-->
+                <article class="info-card data-card">
+                    <div class="card-header">
+                        <h2>Data</h2>
+                    </div>
+                    <dl class="stats-list">
+                        <dt>Area:</dt> <dd>1,564,116 sq km</dd>
+                        <dt>Population:</dt> <dd>3,556,798</dd>
+                        <dt>Capital:</dt> <dd>Ulaanbaatar</dd>
+                        <dt>Languages:</dt> <dd>Mongolian</dd>
+                        <dt>Currency:</dt> <dd>Mongolian Togrog (MNT)</dd>
+                        <dt>Time Zone:</dt> <dd>UTC+8</dd>
+                        <dt>Calling Code:</dt> <dd>+976</dd>
+                        <dt>Internet TLD:</dt> <dd>.mn</dd>
+                    </dl>
+                </article>
+                <!--Right Weather card-->
+                <article class="info-card weather-card">
+                    <div class="card-header">
+                        <h2>Weather</h2>
+                        <!--SVG Icon used strictly for the Mobile view-->
+                        <img class="weather-icon-mobile" src="images/sun.svg" alt="Clear and Sunny" width="24" height="24">
+                    </div>
+                    <dl class="stats-list">
+                        <dt>Temperature:</dt> <dd>16 °C</dd>
+                        <dt>Conditions:</dt> <dd>Clear & Sunny</dd>
+                        <dt>Wind:</dt> <dd>15 km/h</dd>
+                        <dt>Wind Chill:</dt> <dd id="wind-chill"></dd>
+                    </dl>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer same as in all other pages-->
+    <footer>
+       <p> 
+            &copy; <span id="currentyear"></span>
+            🐎 Buyannemekh Chimeddorj 🐎 | Mongolia
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>   
