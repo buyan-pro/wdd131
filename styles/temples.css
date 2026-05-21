@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #f1faee;
+    --text-color: #333;
+    --white: #ffffff;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/*Universal Selector*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body*/
+body {
+    font-family: var(--body-font);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/*Header*/
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    position: relative;
+}
+
+header h1 {
+    text-align: center;
+    font-family: var(--heading-font);
+    margin-bottom: 1rem;
+}
+
+/*Hamburger menu button*/
+#menu {
+    display: block;
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: var(--white);
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+/*Navigation*/
+nav {
+    background-color: var(--primary-color);
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation.open li {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    color: var(--white);
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, 
+                color 0.3s ease;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/*Active navigation link*/
+.navigation a.active {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/*Main*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: var(--heading-font);
+}
+
+.temple-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+
+/*Temple cards*/
+figure {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.temple-content img {
+    width: 100%;
+    height: auto;
+    margin: 5 px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+/*Footer*/
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
