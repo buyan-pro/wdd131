@@ -1,0 +1,58 @@
+/*Large View Navigation*/
+@media screen and (min-width: 768px) {
+
+    /*Hide hamburger menu*/
+    #menu {
+        display: none;
+    }
+
+    /*Horizontal navigation*/
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .navigation li {
+        display: block;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    /*Larger desktop spacing*/
+    main {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* Fix grid layout for 3 clean columns on desktop */
+    .temple-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    /* Ensure figures stretch evenly if one has more text than another */
+    figure {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: 100%;
+    }
+
+    /* Push the dynamic images to the exact bottom of the cards */
+    .temple-content img {
+        margin-top: auto;
+        height: 220px;
+        object-fit: cover;
+    }
+}
+
+
+
