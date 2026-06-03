@@ -53,12 +53,15 @@ header h1 {
 /*Navigation*/
 nav {
     background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
 }
 
-.navigation {
+nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .navigation li {
