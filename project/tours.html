@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Mongolia tour categories and sample public tour packages from Morning Ride Travel and Tours.">
+  <meta name="author" content="Buyannemekh Chimeddorj">
+  <title>Tours | Morning Ride Travel & Tours</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/morning-ride.css">
+  <link rel="stylesheet" href="styles/morning-ride-large.css">
+  <script src="scripts/morning-ride.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Morning Ride Travel and Tours home">
+      <span class="brand-mark">MR</span>
+      <span>
+        <strong>Morning Ride</strong>
+        <small>Travel & Tours</small>
+      </span>
+    </a>
+
+    <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">&#9776;</button>
+
+    <nav id="primary-nav" class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="tours.html" class="active">Tours</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="plan.html">Plan Trip</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero tours-hero">
+      <div>
+        <p class="eyebrow">Tour programs</p>
+        <h1>Explore Mongolia Tour Styles</h1>
+        <p>
+          Morning Ride Travel & Tours organizes Mongolia journeys by destination,
+          travel style, season, comfort level, and available infrastructure.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Tour classifications</p>
+        <h2>Choose the type of journey that fits your travel style</h2>
+      </div>
+
+      <div class="card-grid classification-grid">
+        <article class="info-card">
+          <h3>Classic Tours</h3>
+          <p>
+            Comfortable tours around Ulaanbaatar and Central Mongolia, suitable for
+            first-time visitors, short stays, families, and stopover travelers.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Discovery Expeditions</h3>
+          <p>
+            Popular countryside routes to the Gobi, Khovsgol, Arkhangai, Ovorkhangai,
+            and other major tourism regions with established ger camp facilities.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Adventure Explorations</h3>
+          <p>
+            Remote journeys to regions such as Bayan-Olgiy, Khentii, Dornod, and Khovd
+            for travelers seeking culture, history, wildlife, and less-developed routes.
+          </p>
+        </article>
+
+        <article class="info-card">
+            <h3>Horse-Riding Tours</h3>
+            <p> Active Mongolia journeys designed around horseback travel, open steppe landscapes,
+    nomadic culture, and selected riding routes for guests who want a closer experience
+    of the countryside.
+            </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Sample public itineraries</p>
+        <h2>Tour packages</h2>
+        <p>
+          These summaries show public tour information only. Full day-by-day itineraries
+          are available upon request.
+        </p>
+      </div>
+
+      <div class="filter-bar" aria-label="Tour filters">
+        <button type="button" class="filter-button active" data-filter="all">All</button>
+        <button type="button" class="filter-button" data-filter="classic">Classic</button>
+        <button type="button" class="filter-button" data-filter="discovery">Discovery</button>
+        <button type="button" class="filter-button" data-filter="adventure">Adventure</button>
+        <button type="button" class="filter-button" data-filter="horse">Horse-Riding</button>
+        <button type="button" class="filter-button" data-filter="event">Special Events</button>
+        <button type="button" class="filter-button" data-filter="winter">Winter</button>
+      </div>
+
+      <div id="tour-cards" class="tour-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> Morning Ride Travel & Tours | Ulaanbaatar, Mongolia</p>
+    <p id="lastModified"></p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="tours.html">Tours</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="plan.html">Plan Trip</a>
+      <a href="references.html">References</a>
+      <a href="siteplan.html">Site Plan</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

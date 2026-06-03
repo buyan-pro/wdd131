@@ -1,0 +1,66 @@
+@media screen and (min-width: 760px) {
+  .site-header {
+    padding: 0.85rem 2rem;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .primary-nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 0.35rem;
+    border: 0;
+  }
+
+  .primary-nav a {
+    padding: 0.55rem 0.75rem;
+    border-radius: 6px;
+  }
+
+  .hero {
+    min-height: 640px;
+    padding: 4rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  main > section {
+    padding: 3rem 2rem;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .classification-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+    .page-hero {
+    padding: 4rem 2rem;
+  }
+
+  .page-hero h1 {
+    font-size: 3rem;
+  }
+
+  .tour-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,11 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Morning Ride Travel and Tours, a Mongolia inbound tour operator offering guided tours, accommodation choices, and trip planning for international visitors.">
+  <meta name="author" content="Buyannemekh Chimeddorj">
+  <title>Morning Ride Travel & Tours | Mongolia Inbound Tours</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/morning-ride.css">
+  <link rel="stylesheet" href="styles/morning-ride-large.css">
+  <script src="scripts/morning-ride.js" defer></script>
 </head>
+
 <body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Morning Ride Travel and Tours home">
+      <span class="brand-mark">MR</span>
+      <span>
+        <strong>Morning Ride</strong>
+        <small>Travel & Tours</small>
+      </span>
+    </a>
+    <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">&#9776;</button>
+    <nav id="primary-nav" class="primary-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="tours.html">Tours</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="plan.html">Plan Trip</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Mongolia inbound travel</p>
+        <h1>Morning Ride Travel & Tours</h1>
+        <p>
+          Guided journeys across Mongolia for international guests seeking open landscapes,
+          nomadic culture, comfortable planning, and dependable local support.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="tours.html">Explore Tours</a>
+          <a class="button secondary" href="plan.html">Plan a Trip</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome content-grid">
+      <div class="image-panel" role="img" aria-label="Mongolian landscape placeholder"></div>
+      <div>
+        <p class="eyebrow">Welcome to the Land of Eternal Blue Sky</p>
+        <h2>Local knowledge for meaningful Mongolia travel</h2>
+        <p>
+          Morning Ride Travel & Tours is a Mongolia-based inbound tour operator in Ulaanbaatar.
+          We help foreign visitors discover Mongolia through carefully planned routes, trusted
+          local services, hotel and ger camp accommodation, and flexible trip planning.
+        </p>
+        <p>
+          Our tour programs are designed around realistic travel conditions, seasonal access,
+          transportation, safety, and the best available hospitality in each destination.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Featured tour styles</p>
+        <h2>Start with the travel style that fits you</h2>
+      </div>
+      <div class="card-grid">
+        <article class="info-card">
+          <h3>Classic Tours</h3>
+          <p>
+            Comfortable short journeys around Ulaanbaatar and Central Mongolia, ideal for
+            first-time visitors, families, stopovers, and travelers with limited time.
+          </p>
+          <a href="tours.html">View classic tours</a>
+        </article>
+        <article class="info-card">
+          <h3>Discovery Expeditions</h3>
+          <p>
+            Longer countryside routes to Mongolia's major highlights, including the Gobi,
+            Khovsgol, Arkhangai, Ovorkhangai, and established tourist ger camps.
+          </p>
+          <a href="tours.html">View expeditions</a>
+        </article>
+        <article class="info-card">
+          <h3>Special Events</h3>
+          <p>
+            Seasonal programs for Naadam, Eagle Festival, Camel Festival, Tsagaan Sar,
+            and other cultural events that reveal Mongolia at memorable times of year.
+          </p>
+          <a href="tours.html">View events</a>
+        </article>
+      </div>
+    </section>
+    
+    <section class="why-choose">
+        <div class="section-heading">
+            <p class="eyebrow">Why choose us</p>
+            <h2>Designed for real travel conditions</h2>
+        </div>
+        <div class="feature-grid">
+            <article>
+                <h3>Professional Team</h3>
+                <p>Local tour planning, language guide support, reliable drivers, and destination knowledge
+        for international guests traveling in Mongolia.
+                </p>
+            </article>
+            <article>
+                <h3>Accommodation Choice</h3>
+                <p>City hotels, tourist ger camps, guesthouses, and selected rural stays can be arranged
+        depending on the route and travel style.
+                </p>
+            </article>
+            <article>
+                <h3>Safe Travel Planning</h3>
+                <p>Routes are planned around infrastructure, seasonal access, driving distances, available
+        services, and traveler comfort.
+                </p>
+            </article>
+            <article>
+                <h3>Tailored Tours</h3>
+                <p>Programs can be adjusted for private travelers, groups, special interests, festivals,
+        and preferred travel pace.
+                </p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="currentyear"></span> Morning Ride Travel & Tours | Ulaanbaatar, Mongolia</p>
+  <p id="lastModified"></p>
+  <nav class="footer-nav" aria-label="Footer navigation">
+    <a href="index.html">Home</a>
+    <a href="tours.html">Tours</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="plan.html">Plan Trip</a>
+    <a href="references.html">References</a>
+    <a href="siteplan.html">Site Plan</a>
+  </nav>
+</footer>
     
 </body>
 </html>
