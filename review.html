@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="description" content="WDD 131 - Form Submission Confirmation page">
+     <meta name="author" content="Buyannemekh Chimeddorj">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <!-- Links to the separate submission tracking script -->
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <main>
+            <div class="form-container confirmation-box">
+                <header class="form-header">
+                    <h1>Review Submitted!</h1>
+                </header>
+                
+                <div class="confirmation-content">
+                    <p>Thank you for submitting your product review.</p>
+                    
+                    <!-- This div displays your localStorage counter value -->
+                    <div class="counter-badge">
+                        Total Reviews Completed: <span id="review-counter-display">0</span>
+                    </div>
+
+                    <a href="form.html" class="back-link">← Review Another Product</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy;<span id="current-year">2026</span> 🐎 Buyannemekh Chimeddorj 🐎</p>
+            <p>Mongolia</p>
+            <p>Last Modification: 02/26/2024 13:56:10</p>
+        </footer>
+    </div>
+
+</body>
+</html>

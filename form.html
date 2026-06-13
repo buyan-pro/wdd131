@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="WDD 131 - Product Review Form: Course assignment form completed by student Buyannemekh">
+    <meta name="author" content="Buyannemekh Chimeddorj">
+    <!-- Google Fonts integration for Montserrat and Roboto -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+
+    <!-- Wrapper forces identical width constraints on form container and footer -->
+    <div class="page-wrapper">
+        <main>
+            <div class="form-container">
+                <header class="form-header">
+                    <h1>Product Review</h1>
+                </header>
+                
+                <form action="review.html" method="get">
+                    
+                    <!-- Product Name Selection -->
+                    <div class="form-group">
+                        <label for="product-select">Product Name</label>
+                        <select id="product-select" name="product" required>
+                            <option value="" disabled selected>Select a Product ...</option>
+                        </select>
+                    </div>
+
+                    <!-- Overall Rating (Radio Buttons) -->
+                    <div class="form-group">
+                        <label>Overall Rating</label>
+                        <div class="rating-group">
+                            <div class="rating-item">
+                                <label for="rate-1">☆<br><input type="radio" id="rate-1" name="rating" value="1" required></label>
+                            </div>
+                            <div class="rating-item">
+                                <label for="rate-2">☆☆<br><input type="radio" id="rate-2" name="rating" value="2" required></label>
+                            </div>
+                            <div class="rating-item">
+                                <label for="rate-3">☆☆☆<br><input type="radio" id="rate-3" name="rating" value="3" required></label>
+                            </div>
+                            <div class="rating-item">
+                                <label for="rate-4">☆☆☆☆<br><input type="radio" id="rate-4" name="rating" value="4" required></label>
+                            </div>
+                            <div class="rating-item">
+                                <label for="rate-5">☆☆☆☆☆<br><input type="radio" id="rate-5" name="rating" value="5" required></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Date of Installation -->
+                    <div class="form-group">
+                        <label for="install-date">Date of Installation</label>
+                        <input type="date" id="install-date" name="installDate" required>
+                    </div>
+
+                    <!-- Useful Features Checkboxes -->
+                    <div class="form-group checkbox-group">
+                        <span class="checkbox-title">Which features did you find useful in the product?<br><small>(Check all that apply)</small></span>
+                        
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="feature-durability" name="features" value="durability"> Durability
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="feature-ease" name="features" value="ease-of-use"> Ease of Use
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="feature-performance" name="features" value="performance"> Performance
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="feature-design" name="features" value="design"> Design
+                        </label>
+                    </div>
+
+                    <!-- Written Review -->
+                    <div class="form-group">
+                        <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
+                        <textarea id="written-review" name="writtenReview" rows="5"></textarea>
+                    </div>
+
+                    <!-- User Name -->
+                    <div class="form-group">
+                        <label for="user-name">Your Name <span class="optional">(Optional)</span></label>
+                        <input type="text" id="user-name" name="userName">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Post Review</button>
+
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy;<span id="current-year">2026</span> 🐎 Buyannemekh Chimeddorj 🐎</p>
+            <p>Mongolia</p>
+            <p>Last Modification: 02/26/2024 13:56:10</p>
+        </footer>
+    </div>
+
+</body>
+</html>
