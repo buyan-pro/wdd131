@@ -9,15 +9,16 @@
     --white: #ffffff;
     --border-color: #bcbcbc;
 
-    --heading-font: 'Montserrat', sans-serif;
-    --body-font: 'Roboto', sans-serif;
+    /* FIXED: Clean font name tokens without inline fallbacks to satisfy W3C Parser */
+    --heading-font: 'Montserrat';
+    --body-font: 'Roboto';
 }
 
 /* =================================================================
    GLOBAL SETUP & LAYOUT WRAPPER
    ================================================================= */
 body {
-    font-family: var(--body-font);
+    font-family: var(--body-font), sans-serif; /* Fallback declared here */
     background-color: var(--accent-color);
     color: var(--text-color);
     margin: 0;
@@ -59,7 +60,7 @@ main {
 }
 
 .form-header h1 {
-    font-family: var(--heading-font);
+    font-family: var(--heading-font), sans-serif; /* Fallback declared here */
     margin: 0;
     font-size: 1.4rem;
     font-weight: 600;
@@ -99,7 +100,7 @@ textarea {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: var(--body-font);
+    font-family: var(--body-font), sans-serif;
     font-size: 0.9rem;
     color: var(--text-color);
 }
@@ -165,7 +166,7 @@ textarea:focus {
     color: var(--white);
     border: 0; /* Conforms strictly to W3C numeric layout validation profiles */
     border-radius: 4px;
-    font-family: var(--heading-font);
+    font-family: var(--heading-font), sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
