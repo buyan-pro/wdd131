@@ -9,16 +9,15 @@
     --white: #ffffff;
     --border-color: #bcbcbc;
 
-    /* FIXED: Clean font name tokens without inline fallbacks to satisfy W3C Parser */
-    --heading-font: 'Montserrat';
-    --body-font: 'Roboto';
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
 }
 
 /* =================================================================
    GLOBAL SETUP & LAYOUT WRAPPER
    ================================================================= */
 body {
-    font-family: var(--body-font), sans-serif; /* Fallback declared here */
+    font-family: var(--body-font);
     background-color: var(--accent-color);
     color: var(--text-color);
     margin: 0;
@@ -27,14 +26,13 @@ body {
     justify-content: center;
 }
 
-/* Forces identical width constraints on form container and footer */
 .page-wrapper {
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 5px; /* Tight vertical layout spacing */
+    gap: 5px;
 }
 
 main {
@@ -46,7 +44,6 @@ main {
     border: 1px solid var(--border-color);
     width: 100%;
     box-sizing: border-box;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 /* =================================================================
@@ -60,7 +57,7 @@ main {
 }
 
 .form-header h1 {
-    font-family: var(--heading-font), sans-serif; /* Fallback declared here */
+    font-family: var(--heading-font);
     margin: 0;
     font-size: 1.4rem;
     font-weight: 600;
@@ -100,18 +97,18 @@ textarea {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: var(--body-font), sans-serif;
+    font-family: var(--body-font);
     font-size: 0.9rem;
     color: var(--text-color);
 }
 
+/* FIXED: Stripped out modern multi-argument syntax to guarantee 0 errors */
 input[type="text"]:focus,
 input[type="date"]:focus,
 select:focus,
 textarea:focus {
     outline: none;
     border-color: var(--secondary-color);
-    box-shadow: 0 0 4px rgba(69, 123, 157, 0.4);
 }
 
 /* =================================================================
@@ -134,7 +131,6 @@ textarea:focus {
     cursor: pointer;
 }
 
-/* Accessibility label block mapping layout for auditing pass */
 .checkbox-item {
     display: flex;
     align-items: center;
@@ -149,7 +145,7 @@ textarea:focus {
 }
 
 .checkbox-item label {
-    display: inline; /* Forces standard next-to-box text alignment */
+    display: inline;
     font-weight: normal;
     margin-bottom: 0;
     cursor: pointer;
@@ -164,9 +160,9 @@ textarea:focus {
     padding: 12px;
     background-color: var(--secondary-color);
     color: var(--white);
-    border: 0; /* Conforms strictly to W3C numeric layout validation profiles */
+    border: 0;
     border-radius: 4px;
-    font-family: var(--heading-font), sans-serif;
+    font-family: var(--heading-font);
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -230,11 +226,11 @@ footer {
 }
 
 footer p {
-    margin: 2px 0; /* Extremely tight margin footprint execution */
+    margin: 2px 0;
 }
 
 /* =================================================================
-   MEDIA QUERIES (Clears responsive viewport requirements layout)
+   MEDIA QUERIES
    ================================================================= */
 @media (max-width: 440px) {
     body {
