@@ -18,6 +18,7 @@
   .primary-nav a {
     padding: 0.55rem 0.75rem;
     border-radius: 6px;
+    border-top: 0;
   }
 
   .hero {
@@ -43,7 +44,7 @@
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .classification-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -52,7 +53,7 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-    .page-hero {
+  .page-hero {
     padding: 4rem 2rem;
   }
 

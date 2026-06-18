@@ -20,7 +20,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
     });
   }
 
-    const tours = [
+  const tours = [
     {
       code: `UB-1`,
       name: `Ulaanbaatar City Introduction`,
@@ -72,16 +72,15 @@ document.addEventListener(`DOMContentLoaded`, () => {
       highlights: [`Bayan-Olgiy`, `Kazakh culture`, `Altai Mountains`]
     },
     {
-        code: `HR-1`,
-        name: `Mongolian Steppe Horse-Riding Journey`,
-        category: `horse`,
-        duration: `Flexible length`,
-        season: `June to September`,
-        accommodation: `Ger camps and tent camping options`,
-        description: `An active countryside journey designed around horseback riding, nomadic culture, open steppe landscapes, and selected riding routes.`,
-        highlights: [`Horseback riding`, `Nomadic families`, `Open steppe routes`]
+      code: `HR-1`,
+      name: `Mongolian Steppe Horse-Riding Journey`,
+      category: `horse`,
+      duration: `Flexible length`,
+      season: `June to September`,
+      accommodation: `Ger camps and tent camping options`,
+      description: `An active countryside journey designed around horseback riding, nomadic culture, open steppe landscapes, and selected riding routes.`,
+      highlights: [`Horseback riding`, `Nomadic families`, `Open steppe routes`]
     },
-
     {
       code: `NF-1`,
       name: `Naadam Festival Program`,
@@ -156,7 +155,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
     tourCards.addEventListener(`click`, (event) => {
       if (event.target.classList.contains(`save-tour`)) {
         saveTour(event.target.dataset.code);
-        const activeFilter = document.querySelector(`.filter-button.active`).dataset.filter;
+
+        const activeButton = document.querySelector(`.filter-button.active`);
+        const activeFilter = activeButton ? activeButton.dataset.filter : `all`;
+
         displayTours(activeFilter);
       }
     });
@@ -167,6 +169,30 @@ document.addEventListener(`DOMContentLoaded`, () => {
         button.classList.add(`active`);
         displayTours(button.dataset.filter);
       });
+    });
+  }
+
+  const tripForm = document.querySelector(`#trip-form`);
+  const formResponse = document.querySelector(`#form-response`);
+
+  if (tripForm && formResponse) {
+    tripForm.addEventListener(`submit`, (event) => {
+      event.preventDefault();
+
+      const name = document.querySelector(`#full-name`).value;
+      const selectedTour = document.querySelector(`#tour-style`);
+      const tourStyle = selectedTour.options[selectedTour.selectedIndex].text;
+      const travelers = document.querySelector(`#travelers`).value;
+      const savedTourCodes = JSON.parse(localStorage.getItem(`savedTours`)) || [];
+      const savedTourText = savedTourCodes.length > 0 ? savedTourCodes.join(`, `) : `none selected`;
+      const travelMonth = document.querySelector(`#travel-month`).value;
+      const travelWeek = document.querySelector(`#travel-week`).value;
+      
+      localStorage.setItem(`travelerName`, name);
+
+      formResponse.textContent = `Thank you, ${name}. We received your inquiry for ${travelers} traveler(s), with preferred travel timing: ${travelWeek} of ${travelMonth}. Based on your interest, we will suggest a ${tourStyle} tour option. Your saved tour code(s): ${savedTourText}.`;
+
+      tripForm.reset();
     });
   }
 });

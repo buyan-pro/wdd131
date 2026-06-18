@@ -169,6 +169,7 @@ h3 {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .button.secondary {
@@ -265,7 +266,7 @@ main > section {
   font-weight: 500;
 }
 
-/*Tours page*/
+/* Interior pages */
 .page-hero {
   padding: 3rem 1rem;
   color: var(--charcoal);
@@ -287,6 +288,7 @@ main > section {
   max-width: 760px;
 }
 
+/* Tours page */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -354,4 +356,48 @@ main > section {
   border-radius: 6px;
   font-weight: 700;
   cursor: pointer;
+}
+
+/* Plan trip form */
+.trip-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 760px;
+}
+
+.trip-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+}
+
+.trip-form input,
+.trip-form select,
+.trip-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.trip-form select:invalid {
+  color: var(--muted);
+}
+
+.trip-form select option {
+  color: var(--charcoal);
+}
+
+.form-response {
+  max-width: 760px;
+  margin-top: 1rem;
+  color: var(--teal-dark);
+  font-weight: 700;
+}
+
+.form-response:not(:empty) {
+  padding: 1rem;
+  background: var(--sky);
+  border-radius: 6px;
 }
